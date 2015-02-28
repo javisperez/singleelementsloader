@@ -1,0 +1,24 @@
+.loader-spining {
+    border-radius:50%;
+    height:2px;
+    width:2px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-1px;
+    margin-left:-1px;
+    box-shadow:
+        -7px -12px 0 4px #EEE,
+         7px -12px 0 4px #DDD,
+         14px 0px   0 4px #AAA,
+         7px  12px 0 4px #999,
+        -7px  12px 0 4px #666,
+        -14px 0px   0 4px #333;
+    -webkit-animation:rotate 1s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+        -webkit-transform:rotate(359deg);
+    }
+}

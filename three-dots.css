@@ -1,0 +1,53 @@
+.loader-three-dots:before,
+.loader-three-dots,
+.loader-three-dots:after {
+    content:'';
+    display: block;
+    background-color: #B5D045;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    position: absolute;
+    left: 30px;
+}
+
+.loader-three-dots:before {
+    left: -30px;
+    -webkit-animation: three-dots 1s linear infinite;
+    animation: three-dots 1s linear infinite;
+}
+
+.loader-three-dots {
+    -webkit-animation: three-dots 1s .2s linear infinite;
+    animation: three-dots 1s .2s linear infinite;
+    left: 50%;
+}
+
+.loader-three-dots:after {
+    -webkit-animation: three-dots 1s .4s  linear infinite;
+    animation: three-dots 1s .4s  linear infinite;
+}
+
+@-webkit-keyframes three-dots {
+    0%, 10%, 90%, 100% {
+        width: 0;
+        height: 0;
+    }
+    
+    20%, 80% {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@-keyframes three-dots {
+    0%, 10%, 90%, 100% {
+        width: 0;
+        height: 0;
+    }
+    
+    20%, 80% {
+        width: 24px;
+        height: 24px;
+    }
+}
